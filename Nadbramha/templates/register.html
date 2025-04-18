@@ -1,0 +1,19 @@
+<!-- templates/register.html -->
+{% extends "base.html" %}
+{% block content %}
+<div class="card mx-auto shadow" style="max-width: 400px;">
+  <div class="card-body">
+    <h4 class="card-title text-center mb-4">Register as Admin</h4>
+    <form action="/register" method="post">
+      <div class="mb-3">
+        <input type="text" name="username" class="form-control" placeholder="Username" required>
+      </div>
+      <div class="mb-3">
+        <input type="password" name="password" class="form-control" placeholder="Password" required>
+      </div>
+      <button class="btn btn-success w-100">Register</button>
+    </form>
+    <p class="text-center mt-3">Already have an account? <a href="/">Login</a></p>
+  </div>
+</div>
+{% endblock %}
